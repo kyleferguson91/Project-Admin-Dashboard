@@ -29,8 +29,9 @@ body, html {
     font-family: 'devil';
     grid-auto-rows:  0.05fr;
     font-size: 24px;
-    background-color: #9b5de5;
-    color: black;
+    background-color: #21248f;
+  
+ ;
     justify-items: start;
     align-items: center;
     min-width: 300px;
@@ -43,19 +44,22 @@ body, html {
 }
 
 .header {
-    border: 2px solid green;
+   
+    background-color: #99738e;
     display: grid;
     grid-template-columns: 5fr 1fr 1fr 1fr;
     grid-template-rows: repeat(2, 1fr);
 }
 h2 {
     margin: 0;
+    color: white;
 }
 
 .maincontent {
-    border: 4px solid orange;
+    
     grid-column: 2;
     grid-row: 2/-1;
+    background-color: #ffe46f;
 
 
 }
@@ -64,12 +68,12 @@ h2 {
 
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: 1fr 4fr;
     height: 100vh;
 }
 a {
     text-decoration: none;
-    color: black;
+    color: white;    
     display: block;
     font-weight: bold;
     
@@ -83,11 +87,15 @@ a {
 }*/
 
 button {
-    background-color: lightblue;
+    background-color: #242582;
+    color: white;
+    font-weight: bold;
     border-radius: 50px;
+    border: ;
     width: 100px;
     padding: 20px 20px;
     height: min-content;
+  align-self: center;
 }
 
 button:nth-of-type(1) {
@@ -146,3 +154,95 @@ h2 {
     justify-items: space-between;
 
 }
+
+input {
+    display: inline;
+    height: 2rem;
+    width: 92%;
+    
+    
+
+   ;
+    border-radius: 20px;
+}
+
+h4 {
+    grid-column: 4/-1;
+}
+
+.search > img {
+    display: inline;
+    width: 44px;
+    height: 44px;
+    vertical-align: middle;
+    
+   
+}
+
+.search {
+    align-self: center;
+    grid-column: 1/3;
+
+    
+}
+
+.hello > img {
+    display: inline;
+    width: 80px;
+    height: 80px;
+    transform: translateY(8px);
+    
+    margin-left: 5%;
+}
+
+.hello {
+    position: relative;
+    align-self: flex-start;
+    display: grid;
+ transform: translateY(-12px);
+    align-items: center;
+    grid-template-columns: 0.17fr 1fr;
+    grid-row: 2;
+    
+}
+
+.textbox > h2 {
+  color: black;
+  display: block;
+}
+.textbox > p {
+    color: black;
+    display: block;
+  }
+
+  .textbox  {
+
+  width: max-content;
+
+ vertical-align: middle;
+
+  }
+
+  .accounttab {
+    
+    grid-column: 3/6;
+    margin-left: 20%;
+    align-self: center;
+    font-size: 1.3rem;
+  }
+  .accounttab > h4 {
+    display: inline;
+    vertical-align: middle;
+    margin-left: 20px;
+
+  }
+
+  .accounttab > img {
+    display: inline;
+    width: 40px;
+    height: 40px;
+
+    vertical-align: middle;
+    margin-left: 5%;
+}
+
